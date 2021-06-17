@@ -1,0 +1,34 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - enter_name
+  - enter_country
+
+entities:
+  - name
+  - country
+
+slots:
+  name:
+    type: text
+  country:
+    type: text
+
+responses:
+  utter_greet:
+    - text: "Hi, Please enter your name!"
+
+  utter_country:
+    - text: "Please enter your country!"
+
+  utter_name_and_country:
+    - text: "Your name is {name} and country is {country}. Thanks!"
+
+  utter_goodbye:
+    - text: "Bye"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

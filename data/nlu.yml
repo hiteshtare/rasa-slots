@@ -1,0 +1,44 @@
+version: "2.0"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: enter_name
+    examples: |
+      - my name is [Hitesh](name) 
+      - myself [John](name)
+      - my name [Santosh](name)
+
+  - intent: enter_country
+    examples: |
+      - [India](country) 
+      - [America](country)
+      - [Pakistan](country)
+
+  - intent: goodbye
+    examples: |
+      - good afternoon
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
