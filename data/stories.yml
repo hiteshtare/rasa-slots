@@ -1,17 +1,13 @@
 version: "2.0"
 
 stories:
-  - story: happy path
-    steps:
-      - intent: greet
-      - action: utter_greet
-      - intent: enter_name
-      - action: utter_country
-      - intent: enter_country
-<<<<<<< HEAD
-      - action: action_hello_world
-      - action: utter_name_and_country_and_leader
-      - action: utter_goodbye
-=======
-      - action: utter_name_and_country
->>>>>>> main
+      - story: happy path
+        steps:
+              - intent: greet
+              - action: utter_greet
+              - intent: enter_name
+              - action: utter_country
+              - intent: enter_country
+              - action: action_hello_world
+              - action: utter_name_and_country_and_leader
+              - action: utter_goodbye
