@@ -8,4 +8,6 @@ stories:
       - intent: enter_name
       - action: utter_country
       - intent: enter_country
-      - action: utter_name_and_country
+      - action: action_hello_world
+      - action: utter_name_and_country_and_leader
+      - action: utter_goodbye
