@@ -15,11 +15,14 @@ slots:
     type: text
   country:
     type: text
+<<<<<<< HEAD
   leader:
     type: text
 
 actions:
   - action_hello_world
+=======
+>>>>>>> main
 
 responses:
   utter_greet:
@@ -31,9 +34,12 @@ responses:
   utter_name_and_country:
     - text: "Your name is {name} and country is {country}. Thanks!"
 
+<<<<<<< HEAD
   utter_name_and_country_and_leader:
     - text: "Your name is {name} and country is {country} and leader is {leader}"
 
+=======
+>>>>>>> main
   utter_goodbye:
     - text: "Bye"
 
