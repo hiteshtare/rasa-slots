@@ -25,6 +25,7 @@ class ActionHelloWorld(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
+        # To get current slot value from the tracker
         name = tracker.get_slot("name")
         country = tracker.get_slot("country")
 
@@ -39,6 +40,8 @@ class ActionHelloWorld(Action):
         message = name + ' belongs to ' + country + ' and leader name is ' + leader_name
         print(message)
 
+        # Used text to display text message
         dispatcher.utter_message(text=message)
 
+        # To set custom slot name using SlotSet module
         return [SlotSet("leader", leader_name)]

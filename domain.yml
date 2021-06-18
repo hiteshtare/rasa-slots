@@ -31,6 +31,7 @@ responses:
   utter_name_and_country:
     - text: "Your name is {name} and country is {country}. Thanks!"
 
+  #syntax {} is used to display current slot value:
   utter_name_and_country_and_leader:
     - text: "Your name is {name} and country is {country} and leader is {leader}"
 
